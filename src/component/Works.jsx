@@ -2,7 +2,7 @@ import React from 'react'
 
 const Works = () => {
   return (
-    <div>
+    <div className="  h-[100vh]" >
       Works
     </div>
   )

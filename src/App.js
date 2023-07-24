@@ -3,15 +3,36 @@ import Contact from './component/Contact';
 import Hero from './component/Hero';
 import Who from './component/Who';
 import Works from './component/Works';
+import styled from 'styled-components'
+
+
+
+//Bu da react da inline css yazmak için bir yöntem
+const Container = styled.div`
+  height:100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior:smooth;
+  overflow-y:auto;
+  scrollbar-width:none;
+  color:white;
+  background: url("./img/bg.jpeg");
+  &::-webkit-scrollbar{
+    display:none;
+  }
+
+`
+
+
+
 
 function App() {
   return (
-    <div className="bg-[#9600FA] w-[100vw] h-[100vh]">
+    <Container >
       <Contact/>
       <Hero/>
       <Who/>
       <Works/>
-    </div>
+    </Container>
   );
 }
 
