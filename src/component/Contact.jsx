@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="  h-[100vh]">
+    <div className=" snap-center h-[100vh]">
       Contact
     </div>
   )
