@@ -29,8 +29,8 @@ const Container = styled.div`
 function App() {
   return (
     <Container  >
-      <Contact/>
       <Hero/>
+      <Contact/>
       <Who/>
       <Works/>
     </Container>
