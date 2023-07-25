@@ -30,9 +30,9 @@ function App() {
   return (
     <Container  >
       <Hero/>
-      <Contact/>
       <Who/>
       <Works/>
+      <Contact/>
     </Container>
   );
 }

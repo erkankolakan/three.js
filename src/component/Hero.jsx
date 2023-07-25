@@ -57,7 +57,7 @@ const Subtitle = styled.h2`
 `;
 
 const Desc = styled.p`
-
+  font-size: 20px;
 `
 const Button = styled.button`
   background-color: #da4ea2;
@@ -84,7 +84,7 @@ const Img = styled.img`
   left:0;
   bottom:0;
   margin:auto;
-  
+
   /*Bu kisim animasyon vermek için kullanilir*/
   animation: animate 2s infinite ease alternate;
   
