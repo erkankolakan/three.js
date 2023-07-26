@@ -34,7 +34,6 @@ function App() {
       <Who/>
       <Works/>
       <Contact/>
-      <Test/>
     </Container>
   );
 }
