@@ -23,8 +23,6 @@ const Development = () => {
       <Stage environment="city" intensity={0.6}>  
         <Chair/>
       </Stage>
-      <ambientLight 
-      />
       <OrbitControls enableZoom={false}/>
     </Canvas>
     <Desc>
