@@ -2,7 +2,12 @@ import React from 'react'
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Cat from './Cat'
+// import Cat2 from './Cat2'
 import { styled } from 'styled-components'
+
+
+
+
 
 const CatAnimation = () => {
 
@@ -19,12 +24,16 @@ const CatAnimation = () => {
   `
 
 
+
+
+
   return (
     <>
         <Canvas>
-            <OrbitControls enableZoom={false}/>
-            <Stage environment="city" intensity={0.6}>
-                <Cat/>
+            <OrbitControls enableZoom={false} />
+            
+            <Stage >
+                <Cat />
             </Stage>
         </Canvas>
         <Desc>

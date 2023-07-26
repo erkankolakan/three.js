@@ -97,6 +97,7 @@ const Works = () => {
 
   return (
     <Section>
+      
       <Container>
         <Left>
 
@@ -116,7 +117,8 @@ const Works = () => {
             work === "Web Desing" ? (<WebDesing/>) :
             work === "Development" ? (<Development/>):
             work === "Product" ? (<CatAnimation/>):
-            (<SocialMedia/>)
+            work === "Social Media" ? (<SocialMedia/>):
+            (<ProductDesing/>)
           }
           
 
