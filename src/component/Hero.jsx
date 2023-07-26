@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { styled } from 'styled-components'
+import { Canvas } from '@react-three/fiber'
+import {  MeshDistortMaterial, OrbitControls,Sphere } from '@react-three/drei'
+import { Material } from 'three'
 
 
 const Section = styled.div`
@@ -114,12 +117,21 @@ const Hero = () => {
 
 
         <Right>
-          {/* 3d Model  */}
+        <Canvas>
+          <OrbitControls enableZoom={false} /> 
+            <ambientLight intensity={5} />
+            <directionalLight position={[3,2,1]} />
+            <Sphere args={[1,100,200]} scale={2.5}> 
+            <MeshDistortMaterial color="#220736" attach="material" distort={0.5} speed={2}/>
+            </Sphere>
+          </Canvas>
             <Img src="./img/moon.png"/>
-        </Right>
+        </Right> 
       </Container>
     </Section>
   )
 }
 
 export default Hero
+
+//<Sphere args={[1,100,200]}/> sphere cismin adı args ise cismin boyutlandırması için kullandığımız bir tag
