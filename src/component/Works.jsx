@@ -18,6 +18,10 @@ const Section = styled.div`
   scroll-snap-align: center;
   display:flex;
   justify-content:center;
+  position:relative;
+  font-size:14px;
+  font-weight:300;
+
  
 `
 
@@ -105,8 +109,6 @@ const Works = () => {
           </List>
 
         </Left>
-        {work}
-
         <Right>
           {
             work === "Web Desing" ? (<WebDesing/>) :
