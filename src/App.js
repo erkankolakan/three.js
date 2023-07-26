@@ -1,6 +1,7 @@
 import './App.css';
 import Contact from './component/Contact';
 import Hero from './component/Hero';
+import Test from './component/Test';
 import Who from './component/Who';
 import Works from './component/Works';
 import styled from 'styled-components'
@@ -33,6 +34,7 @@ function App() {
       <Who/>
       <Works/>
       <Contact/>
+      <Test/>
     </Container>
   );
 }

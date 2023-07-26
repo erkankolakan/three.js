@@ -70,6 +70,12 @@ const Right = styled.div`
 
 `
 
+const handleSubmit = (e) => {
+  e.preventDefault(); //formun otomatik olarak sayfayı yenilemesini ve verileri sunucuya göndermesini engellemek için kullanılabilir. Bu şekilde, sayfayı yenilemeden JavaScript tarafından form verilerinin işlenmesi veya gönderilmesi mümkün olabilir.
+
+  //"onSubmit" özelliği, bir HTML formu gönderildiğinde çalıştırılacak bir işlevi belirtmek için kullanılır.
+}
+
 
 
 
@@ -78,12 +84,12 @@ const Contact = () => {
     <Section>
       <Container>
         <Left>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
             <Input placeholder='Name' />
             <Input placeholder='Email'/>
             <TextArea placeholder='Write your message' />
-            <Button>Send</Button>
+            <Button type="submit" >Send</Button>
           </Form>
         </Left>
         <Right>

@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.79.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^10.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-simple-maps": "^3.0.0",
+    "react-three-fiber": "^6.0.13",
     "styled-components": "^6.0.5",
     "three": "^0.154.0",
+    "troika-three-text": "^0.48.0-unicode.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
