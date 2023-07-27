@@ -23,18 +23,43 @@ const Left = styled.div`
   justify-content:center;
   align-items:flex-end;
   flex-direction:column;
+
+  @media only screen and (max-width:768px){
+    justify-content:center;
+    
+
+  }
+
+
 `
 const Title = styled.h1`
   font-size:35px;
   font-weight:100;
   width:500px
 
+  
+
+
 `
 const Form = styled.form`
   width:500px;
   display:flex;
   flex-direction:column;
-  gap:25px
+  gap:25px;
+
+
+
+  /*Burada kaldım */
+  @media only screen and (max-width:768px){
+    
+    
+    
+    
+
+  }
+
+
+ 
 `
 const Input = styled.input`
   padding:20px;
@@ -66,6 +91,11 @@ const Button = styled.button`
 
 const Right = styled.div`
   flex:1;
+
+  @media only screen and (max-width:768px){
+    display:none;
+
+  }
  
 
 `

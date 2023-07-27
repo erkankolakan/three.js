@@ -10,6 +10,8 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content:center;
+
+ 
 `
 
 const Container = styled.div`
@@ -18,12 +20,22 @@ const Container = styled.div`
   width:1400px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width:768px){
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:0 20px;
+  }
 `
 
 
 const Left = styled.div`
   flex:1;
 
+  @media only screen and (max-width:768px){
+    display:none;
+  }
 `
 
 
@@ -34,10 +46,18 @@ const Right = styled.div`
   flex-direction:column;
   justify-content:center;
   gap:20px
+
+
 `
 const Title = styled.h1`
   font-size: 74px;
   font-weight: 900;
+
+
+  @media only screen and (max-width:768px){
+  font-size: 60px;
+
+  }
 
 `
 const WhatWeDo = styled.div`
@@ -45,6 +65,9 @@ const WhatWeDo = styled.div`
   align-items:center;
   justify-contet:center;
   gap:10px
+
+  
+  
 `
 const Line = styled.img`
   height: 5px;
@@ -64,6 +87,7 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
 
+
 `
 const Button = styled.button`
   background-color: #da4ea2;
@@ -72,6 +96,12 @@ const Button = styled.button`
   color:white;
   width:130px;
   font-weight: 500;
+
+  @media only screen and (max-width:768px){
+    margin:auto;
+  }
+
+
 `
 
 
