@@ -51,16 +51,10 @@ const Form = styled.form`
 
   /*Burada kaldım */
   @media only screen and (max-width:768px){
-    
-    
-    
-    
-
-  }
-
-
- 
+    }
 `
+
+
 const Input = styled.input`
   padding:20px;
   width:500px;
